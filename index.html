@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>we do have time.</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Montserrat', sans-serif;
+                text-align: start;
+                background-image: linear-gradient(to top, #336699, #e58de5);                
+                color: white;
+                padding: 15px;
+
+                display: flex;
+                flex-direction: column;
+                height: 96vh;
+                overflow: hidden;
+            }
+
+            .content{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+
+            #secs {
+                font-weight: 700;
+                font-size: 128px;
+
+                font-family: "Source Code Pro", monospace;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: normal;
+            }
+
+            #title {
+                font-size: 64px;
+                font-weight: 600;
+                padding-bottom: 128px;
+
+            }
+
+            #sub {
+                font-weight: 600;
+            }
+
+            .box{
+                display: inline;
+                padding-right: 30px;
+            }
+
+            .text{
+                font-weight: 600;
+                font-size: 24px;
+            }
+        </style>
+
+        <script>
+
+            document.addEventListener('DOMContentLoaded', function(){
+                let now = new Date();
+                const currYear = now.getFullYear();
+                const endOfYear = new Date(currYear+"-12-31T23:59:59");
+                let diffInSeconds = Math.floor((endOfYear - now)/1000);
+
+                let diffInSecsPrint = diffInSeconds.toLocaleString('el-GR');
+
+                document.querySelector('#secs').innerHTML = diffInSecsPrint;
+
+                function countSecs()
+                { 
+                    diffInSeconds = diffInSeconds - 1;
+                    diffInSecsPrint = diffInSeconds.toLocaleString('el-GR');
+                    document.querySelector('#secs').innerHTML = diffInSecsPrint;
+                }
+
+                setInterval(countSecs,1000);
+            });
+        </script>
+    </head>
+    <body>
+        <div id="title">
+            seconds until <br>— new year's eve.
+        </div>
+        <div class="content">
+            <div id="sub">— the year is 2024 for the next</div>
+            <div class="container">
+                <div class="box" id="secs">0</div>
+                <div class="box" id="sub">seconds.</div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="text">hello. perhaps time is everything, yet time is nothing. time is both fictional and real.<br>you have time — you should f*cking do it.</div>
+    </body>
+</html>
