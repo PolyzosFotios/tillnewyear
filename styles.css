@@ -5,7 +5,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     text-align: start;
-    background: radial-gradient(circle, #3e709c, rgb(138, 77, 169), #6845af, #3e709c);
+    background: radial-gradient(#3e709c, rgb(103, 77, 169), #6145af, #3e709c);
     background-size: 300% 300%;
     animation: waveBackground 45s infinite alternate ease-in-out;
 
@@ -19,6 +19,7 @@ body {
 }
 
 .content{
+    padding-bottom: 20px;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -61,7 +62,7 @@ body {
 
     #secs {
         font-weight: 700;
-        font-size: 64px;
+        font-size: 46px;
 
         font-family: "Source Code Pro", monospace;
         font-optical-sizing: auto;
