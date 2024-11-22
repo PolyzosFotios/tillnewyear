@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+    
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: start;
+    background: radial-gradient(circle, #3e709c, rgb(138, 77, 169), #6845af, #3e709c);
+    background-size: 300% 300%;
+    animation: waveBackground 45s infinite alternate ease-in-out;
+
+    color: white;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    height: 96vh;
+    overflow: hidden;
+}
+
+.content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#secs {
+    font-weight: 700;
+    font-size: 128px;
+
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+#title {
+    font-size: 64px;
+    font-weight: 600;
+    padding-bottom: 128px;
+
+}
+
+#sub {
+    font-weight: 600;
+}
+
+.box{
+    display: inline;
+    padding-right: 30px;
+}
+
+.text{
+    font-weight: 600;
+    font-size: 24px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    #secs {
+        font-weight: 700;
+        font-size: 64px;
+
+        font-family: "Source Code Pro", monospace;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+    }
+
+    #title {
+        font-size: 32px;
+        font-weight: 600;
+        padding-bottom: 128px;
+
+    }
+
+    #sub {
+        font-weight: 600;
+    }
+
+    .box{
+        display: inline;
+        padding-right: 30px;
+    }
+
+    .text{
+        font-weight: 600;
+        font-size: 20px;
+    }
+}
+
+@keyframes waveBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
