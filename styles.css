@@ -5,9 +5,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
     text-align: start;
-    background: radial-gradient(#3e709c, rgb(103, 77, 169), #6145af, #3e709c);
-    background-size: 300% 300%;
-    animation: waveBackground 45s infinite alternate ease-in-out;
 
     color: white;
     padding: 15px;
@@ -43,7 +40,7 @@ body {
 
 }
 
-#sub {
+.sub {
     font-weight: 600;
 }
 
@@ -77,7 +74,7 @@ body {
 
     }
 
-    #sub {
+    .sub {
         font-weight: 600;
     }
 

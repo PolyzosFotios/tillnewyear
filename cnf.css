@@ -1,0 +1,14 @@
+.confetti {
+    position: absolute;
+    border-radius: 16%;
+    animation: fall 10s linear infinite;
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(-50px) rotate(0deg);
+    }
+    100% {
+      transform: translateY(100vh) rotate(100deg);
+    }
+  }
