@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function(){
     
     if (currMonth === 1 && currDay == 1){
         crtConf();
-        document.querySelector('#sub').innerHTML = "— it's new year's eve! but only for the next"
+        document.querySelector('#sub').innerHTML = "— it's new year's day! but only for the next"
         let endOfEve = new Date(currYear+"-01-01T23:59:59");
         diffInSeconds = Math.floor((endOfEve - now)/1000);
         document.querySelector('#msg').innerHTML = "happy new year! tell your people that you love them.";
