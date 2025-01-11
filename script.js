@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function(){
     let currMonth = now.getMonth() + 1;
     let currDay = now.getDate();
 
-    document.getElementbyID("").innerHTML = currYear;
+    document.getElementById('currentYear').textContent = currYear;
 
     let endOfYear = new Date(currYear+"-12-31T23:59:59");
 
