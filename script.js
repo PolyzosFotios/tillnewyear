@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', function(){
     let currMonth = now.getMonth() + 1;
     let currDay = now.getDate();
 
-    document.getElementById('currentYear').textContent = currYear;
-
     let endOfYear = new Date(currYear+"-12-31T23:59:59");
+
+    document.getElementById('currentYear').textContent = currYear;
 
     let diffInSeconds = Math.floor((endOfYear - now)/1000);
 
